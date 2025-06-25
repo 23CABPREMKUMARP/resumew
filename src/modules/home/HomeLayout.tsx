@@ -14,12 +14,22 @@ const HomeLayout = () => {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="relative">
       {/* Background Layer */}
       <div className="absolute inset-0 -z-10">
+        {/* Desktop image */}
         <img
           src="templates/homepage.png"
-          alt="Homepage background"
-          className="w-full h-full md:h-screen object-cover object-center"
+          alt="Homepage background desktop"
+          className="hidden md:block w-full h-screen object-cover object-center"
         />
-        <div className="absolute inset-0 bg-transparent"></div>
+
+        {/* Mobile image */}
+        <img
+          src="templates/ChatGPT Image Jun 25, 2025 at 08_00_53 PM.png"
+          alt="Homepage background mobile"
+          className="block md:hidden w-full h-[60vh] object-cover object-center"
+        />
+
+        {/* Optional overlay */}
+        <div className="absolute inset-0 bg-white/0"></div>
       </div>
 
       {/* Navbar */}
