@@ -14,12 +14,17 @@ const HomeLayout = () => {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="relative">
       {/* Background Layer */}
       <div className="absolute inset-0 -z-10">
-        <img src="templates/homepage.png" alt="Homepage background"  />
-        <div className="absolute inset-0 bg-transparent"></div>
-      </div>
+  <img
+    src="templates/homepage.png"
+    alt="Homepage background"
+    className="w-screen h-screen object-cover"
+  />
+  <div className="absolute inset-0 bg-transparent"></div>
+</div>
+
 
       {/* Navbar */}
-      <nav className="fixed top-0 w-full z-30 bg-opacity-80 backdrop-blur-md shadow-md py-4 px-6 flex justify-between items-center">
+<nav className="fixed top-0 w-full z-30 bg-opacity-80 backdrop-blur-md shadow-md py1 px-6 flex justify-between items-center">
         <Link href="/">
           <Image src="/icons/resume-icon.png" alt="logo" width={36} height={36} />
         </Link>
@@ -49,13 +54,19 @@ const HomeLayout = () => {
 
   </p>
 </div>
+<Link href="/builder">
+  <Button
+    variant="contained"
+    className="animate-neon text-black text-xl font-bold italic px-8 py-4 rounded-lg 
+               transition-all duration-300 hover:scale-105 neon-stroke"
+  >
+    Start Building Your Resume
+  </Button>
+</Link>
 
 
-        <Link href="/builder">
-          <Button variant="contained" className="bg-blue-600 hover:bg-blue-700">
-            Start Building Your Resume
-          </Button>
-        </Link>
+
+
       </section>
 
       {/* Features */}

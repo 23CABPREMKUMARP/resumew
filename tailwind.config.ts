@@ -58,6 +58,27 @@ const config: Config = {
         height: 'height',
         spacing: 'margin, padding',
       },
+
+      // 💡 Add custom keyframes + animation here
+      keyframes: {
+        neonPulse: {
+          '0%, 100%': {
+            boxShadow: '0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff',
+            backgroundColor: '#0ff',
+          },
+          '33%': {
+            boxShadow: '0 0 10px #f0f, 0 0 20px #f0f, 0 0 40px #f0f',
+            backgroundColor: '#f0f',
+          },
+          '66%': {
+            boxShadow: '0 0 10px #0f0, 0 0 20px #0f0, 0 0 40px #0f0',
+            backgroundColor: '#0f0',
+          },
+        },
+      },
+      animation: {
+        neon: 'neonPulse 3s infinite ease-in-out',
+      },
     },
   },
   plugins: [require('@tailwindcss/typography')],
