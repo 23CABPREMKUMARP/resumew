@@ -8,7 +8,6 @@
     "build": "next build",
     "start": "next start",
     "prepare": "if [ \"$NODE_ENV\" != \"production\" ]; then husky install; fi",
-    "vercel-build": "NODE_ENV=production npm run build"
   },
   "dependencies": {
     "@base-ui-components/react": "^1.0.0-beta.0",
