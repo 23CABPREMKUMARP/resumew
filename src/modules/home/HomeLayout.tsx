@@ -13,14 +13,15 @@ const HomeLayout = () => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="relative">
       {/* Background Layer */}
-      <div className="absolute inset-0 -z-10">
-        <img
-          src="templates/homepage.png"
-          alt="Homepage background"
-          className="w-screen h-screen object-cover"
-        />
-        <div className="absolute inset-0 bg-transparent"></div>
-      </div>
+  <div className="absolute inset-0 -z-10">
+  <img
+    src="templates/homepage.png"
+    alt="Homepage background"
+    className="w-full h-full md:h-screen object-cover object-center"
+  />
+  <div className="absolute inset-0 bg-transparent"></div>
+</div>
+
 
       {/* Navbar */}
       <nav className="fixed top-0 w-full z-30 bg-opacity-80 backdrop-blur-md shadow-md py1 px-6 flex justify-between items-center">
