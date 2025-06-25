@@ -16,14 +16,14 @@ const HomeLayout = () => {
       <div className="absolute inset-0 -z-10">
         {/* Desktop image */}
         <img
-          src="templates/homepage.png"
+          src="templates/ChatGPT Image Jun 25, 2025 at 08_21_26 PM.png"
           alt="Homepage background desktop"
           className="hidden md:block w-full h-screen object-cover object-center"
         />
 
         {/* Mobile image */}
         <img
-          src="templates/ChatGPT Image Jun 25, 2025 at 08_00_53 PM.png"
+          src="templates/ChatGPT Image Jun 25, 2025 at 08_28_55 PM.png"
           alt="Homepage background mobile"
           className="block md:hidden w-full h-[60vh] object-cover object-center"
         />
@@ -33,22 +33,28 @@ const HomeLayout = () => {
       </div>
 
       {/* Navbar */}
-      <nav className="fixed top-0 w-full z-30 bg-opacity-80 backdrop-blur-md shadow-md py1 px-6 flex justify-between items-center">
+      <nav className="fixed top-0 w-full z-30 bg-opacity-80 backdrop-clear-md shadow-md py-2 px-6 flex justify-between items-center">
         <Link href="/">
           <Image src="/icons/resume-icon.png" alt="logo" width={36} height={36} />
         </Link>
         <div className="flex gap-4 p-4 items-center">
           <Link href="/builder">
-            <StyledButton variant="text">Editor</StyledButton>
+            <StyledButton variant="text" className="neon-text">
+              Editor
+            </StyledButton>
           </Link>
           <Link href="#contribute">
-            <StyledButton variant="text">Contribute</StyledButton>
+            <StyledButton variant="text" className="neon-text">
+              Contribute
+            </StyledButton>
           </Link>
           <Link href="#about-us">
-            <StyledButton variant="text">About Me</StyledButton>
+            <StyledButton variant="text" className="neon-text">
+              About Me
+            </StyledButton>
           </Link>
           <a href="https://github.com/23CABPREMKUMARP" target="_blank" rel="noreferrer">
-            <BsGithub className="h-6 w-6 text-white" />
+            <BsGithub className="h-6 w-6 neon-text" />
           </a>
         </div>
       </nav>
@@ -64,7 +70,7 @@ const HomeLayout = () => {
         <Link href="/builder">
           <Button
             variant="contained"
-            className="animate-neon text-black text-xl font-bold italic px-8 py-4 rounded-lg 
+            className="mt-80 animate-neon text-black text-xl font-bold italic px-8 py-4 rounded-lg 
                transition-all duration-300 hover:scale-105 neon-stroke"
           >
             Start Building Your Resume

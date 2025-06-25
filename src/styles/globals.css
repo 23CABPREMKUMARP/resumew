@@ -16,6 +16,26 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+.neon-text {
+  color: white;
+  transition:
+    text-shadow 0.3s ease,
+    color 0.3s ease;
+  text-shadow:
+    0 0 5px #46cf18,
+    0 0 10px #c65ac2,
+    0 0 20px #e662c7,
+    0 0 40px #dd64cb;
+}
+
+.neon-text:hover {
+  color: #ff00cc;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #ff00cc,
+    0 0 20px #ff00cc,
+    0 0 40px #ff00cc;
+}
 
 @media print {
   body *,
