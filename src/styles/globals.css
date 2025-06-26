@@ -17,15 +17,15 @@ body {
   scrollbar-width: none; /* Firefox */
 }
 .neon-text {
-  color: white;
+  color: rgb(10, 10, 10);
   transition:
     text-shadow 0.3s ease,
     color 0.3s ease;
   text-shadow:
-    0 0 5px #46cf18,
-    0 0 10px #c65ac2,
-    0 0 20px #e662c7,
-    0 0 40px #dd64cb;
+    0 0 5px #fafbf9,
+    0 0 10px #fbf7fb,
+    0 0 20px #f8f7f8,
+    0 0 40px #f7f1f6;
 }
 
 .neon-text:hover {

@@ -16,16 +16,16 @@ const HomeLayout = () => {
       <div className="absolute inset-0 -z-10">
         {/* Desktop image */}
         <img
-          src="templates/ChatGPT Image Jun 25, 2025 at 08_21_26 PM.png"
+          src="photo_6262575978932978425_y.jpg"
           alt="Homepage background desktop"
           className="hidden md:block w-full h-screen object-cover object-center"
         />
 
         {/* Mobile image */}
         <img
-          src="templates/ChatGPT Image Jun 25, 2025 at 08_28_55 PM.png"
+          src="templates/photo_6262575978932978388_y.jpg"
           alt="Homepage background mobile"
-          className="block md:hidden w-full h-[60vh] object-cover object-center"
+          className="block md:hidden w-full h-[100vh] object-cover object-center"
         />
 
         {/* Optional overlay */}
@@ -35,7 +35,7 @@ const HomeLayout = () => {
       {/* Navbar */}
       <nav className="fixed top-0 w-full z-30 bg-opacity-80 backdrop-clear-md shadow-md py-2 px-6 flex justify-between items-center">
         <Link href="/">
-          <Image src="/icons/resume-icon.png" alt="logo" width={36} height={36} />
+          <Image src="/icons/resume-icon.png" alt="logo" width={70} height={36} />
         </Link>
         <div className="flex gap-4 p-4 items-center">
           <Link href="/builder">
