@@ -23,7 +23,7 @@ const HomeLayout = () => {
 
         {/* Mobile image */}
         <img
-          src="templates/photo_6262575978932978388_y.jpg"
+          src="templates/photo_6262575978932978433_y.jpg"
           alt="Homepage background mobile"
           className="block md:hidden w-full h-[100vh] object-cover object-center"
         />
